@@ -4,7 +4,7 @@
 
 %%
 "int"|"float"|"char"    { return KEY; }
-[a-zA-Z_]               { return ID; }
+[a-zA-Z_][a-zA-Z0-9_]* { return ID; }
 ","                     { return COMMA; }
 ";"                     { return SEMI; }
 [ \t\n]+                { }
