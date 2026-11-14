@@ -7,7 +7,7 @@
 [a-zA-Z_]               { return ID; }
 ","                     { return COMMA; }
 ";"                     { return SEMI; }
-[ \t\n]+                { /* Ignore whitespace */ }
+[ \t\n]+                { }
 .                       { return yytext[0]; }
 %%
 
